@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'bottle#hihi'    #웰컴이 컨트로러이름 인덱스가 erb
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -12,6 +12,12 @@
             
             <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+            
+            <script
+                  src="https://code.jquery.com/jquery-3.2.1.js"
+                  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+                  crossorigin="anonymous">
+            </script>
     </head>
     <body>
         <h1 align="center"> 그리드시스템을 배워보자 </h1>
@@ -31,7 +37,12 @@
             
         </div>
         <div class="row">
-              <div class="col-md-8 well"> my size is 8</div>
+              <div class="col-md-offset-5 col-md-2 well" id="pu">push</div>
+              <div class="col-md-3 well" id="fi"> my size is 3</div>
+            
+        </div>
+        <div class="row">
+              <div class="col-md-offset-1 col-md-8 well"> my size is 8</div>
               <div class="col-md-3 well"> my size is 3</div>
             
         </div>
@@ -45,5 +56,21 @@
               <div class="col-md-6 well">.col-md-6</div>
               <div class="col-md-6 well">.col-md-6</div>
         </div>
+        
+        
     </body>
+    <script>
+          $( "#pu" ).click(function() {
+          $( "#fi" ).fadeOut( "slow", function() {
+             var number =prompt("얼마잇니");
+            // Animation complete.
+            if(number>10000)
+            console.log("부자네");
+            else{
+            console.log("거지네");
+            alert("거지거직저ㅣ");
+            }
+          });
+        });
+    </script>
 </html>
